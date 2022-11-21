@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+/*NAVEGATION*/
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: azure;
+}
+ul{
+    list-style: none;
+}
+.nav-list{
+    display: flex;
+}
+li{
+    margin: 0 2rem;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/background-tundraful.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    color: azure;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.header-content .line{
+    width: 30vmin;
+    height: 0.2rem;
+    margin: 0.8rem auto;
+    background-color:crimson;
+}
+.header-content h1{
+    font-size: 6vmin;
+    margin-bottom: 1rem;
+}
+.ctn{    
+    color: azure;
+    background: crimson;
+    border-radius: 0.7rem;
+    padding: 0.5rem 1.7rem;
+}
