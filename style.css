@@ -1,39 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: azure;
 }
 
+a:hover,
+a:focus {
+    color: bisque;
+    background: rgba(255, 123, 0, 0.349)
+}
+
 /*NAVEGATION*/
 
-.navbar{
+.navbar {
     position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 1.5rem;
     color: azure;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
 }
-li{
+
+li {
     margin: 0 2rem;
+    padding: 0.7rem 0;
+}
+li a{
+    /* display: block; */
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
 }
 
-header{
+header {
     width: 100vw;
     height: 100vh;
-    background-image: url('img/background-tundraful.png');
+    background-image: url('img/new-york-city4.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -41,27 +57,31 @@ header{
     justify-content: center;
 }
 
-.header-content{
+.header-content {
     color: azure;
     margin-bottom: 5rem;
     text-align: center;
 }
-.header-content h2{
+
+.header-content h2 {
     font-size: 4vmin;
 }
-.header-content .line{
+
+.header-content .line {
     width: 30vmin;
     height: 0.2rem;
     margin: 0.8rem auto;
-    background-color:crimson;
+    background-color: crimson;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 6vmin;
     margin-bottom: 1rem;
 }
-.ctn{    
+
+.ctn {
     color: azure;
     background: crimson;
     border-radius: 0.7rem;
-    padding: 0.5rem 1.7rem;
+    padding: 0.6rem 1.7rem;
 }
