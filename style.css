@@ -25,11 +25,19 @@ a:hover{
     justify-content: space-between;
     padding: 1rem;
     color: azure;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.555);
 }
 .logo{
     margin: 0 2rem;
     padding: 0.7rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    transform: scale(1.4);
+    color:gold;
 }
 ul {
     list-style: none;
