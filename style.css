@@ -25,7 +25,7 @@ a:hover{
     justify-content: space-between;
     padding: 1rem;
     color: azure;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.685);
 }
 .logo{
     margin: 0 2rem;
@@ -103,13 +103,13 @@ header {
 
 main{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .galeria{
     width: 100vw;
     max-width: 1080px;
     height: 100vh;
-    margin: 1rem auto;
+    margin: 6rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 15rem;
@@ -137,4 +137,45 @@ figure img:hover{
 }
 .galeria .box-img:nth-child(4){
     grid-row-start: span 2;
+}
+
+/* VIDEOS */
+
+.media{
+    background-color:rgba(0, 0, 0, 0.815);
+    margin: 3rem 0;
+}
+
+.article-media{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.video-media{
+    width: 640px;
+    height: 360px;
+    grid-column-start: span 1;
+    grid-row-start: 1/2;
+}
+.media-content{
+    text-align: center;
+    margin-top: 7rem;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color:whitesmoke;
+}
+.h2-media{
+    font-size: 4vmin;
+}
+.p-media{
+    padding: 0 1rem;
+    margin: 2rem auto;
+    font-size: 2vmin;
+}
+
+footer{
+    width: 1000px;
+    height: 200px;
+    background-color: rgb(227, 236, 236);
 }
