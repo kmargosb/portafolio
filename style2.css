@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:whitesmoke
+}
+.figure-about{
+    width: 50%;
+    max-height: 100%;
+    background-position: bottom;
+    background-size: cover;  
+}
+.article-about{    
+    width: 50%;
+    max-height:100vh;
+    text-align: center;
+    margin: auto 1rem;
+    
+}
+.article-about h1{
+    font-size: 6vmin; 
+}
+.article-about, p{
+    font-size: 2vmin;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
