@@ -93,20 +93,20 @@ header {
 }
 .ctn:hover{
     color: bisque;
-    background: rgba(255, 123, 0, 0.349);
+    background: rgba(255, 123, 0, 0.349);    
 }
 
 .ctn {
     color: azure;
     background: crimson;
     border-radius: 0.7rem;
-    padding: 0.6rem 1.7rem;
+    padding: 0.6rem 1.7rem;    
 }
 
 /*MAIN*/
 
 main{
-    width: 100vw;
+    width: 100vw;    
 }
 .galeria{
     width: 100vw;
@@ -145,7 +145,7 @@ figure img:hover{
 /* VIDEOS */
 
 .media{
-    width: 100vw;
+    width: 100%;
     background-color: rgb(0, 0, 14);
     margin: 3rem 0;
 }
@@ -182,4 +182,28 @@ footer{
     width: 100vw;
     height: 200px;
     background-color: rgb(0, 0, 0);
+}
+
+/* ABOUT ME */
+
+.main-about{
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+}
+.figure-about{
+    width: 50%;
+    max-height:100vh;
+    background-color: rgb(126, 8, 8);    
+}
+.article-about{
+    width: 50%;
+    background-color: blue;
+}
+.article-about, h1{
+    font-size: 6vmin;
+    margin: 5rem 0 0 0;
+}
+.article-about, p{
+    font-size: 2vmin;
 }
