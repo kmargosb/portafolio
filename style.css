@@ -96,11 +96,11 @@ header {
     background: rgba(255, 123, 0, 0.349);    
 }
 
-.ctn {
+.ctn {       
     color: azure;
     background: crimson;
     border-radius: 0.7rem;
-    padding: 0.6rem 1.7rem;    
+    padding: 0.6rem 1.7rem;      
 }
 
 /*MAIN*/
@@ -118,23 +118,19 @@ main{
     grid-template-rows: 15rem;
     grid-gap: 1rem;    
 }
-
 .galeria, .box-img, figure {
     width: 100%;
     height: 100%;
 }
-
 .galeria, .box-img, img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 1s;
 }
-
 figure img:hover{
     transform: scale(1.1);
 }
-
 .galeria .box-img:nth-child(1){
     grid-column-start: span 2;
 }
@@ -142,44 +138,130 @@ figure img:hover{
     grid-row-start: span 2;
 }
 
-/* VIDEOS */
+/* CNC */
 
-.media{
-    width: 100%;
-    background-color: rgb(0, 0, 14);
-    margin: 3rem 0;
+.cnc_router{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
 }
-
-.article-media{
-    max-width: 1280px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.cnc_media{
+    width: 50%; 
+    object-fit: cover;   
 }
-.video-media{
-    width: 640px;
-    height: 360px;
-    grid-column-start: span 1;
-    grid-row-start: 1/2;
-}
-.media-content{
+.cnc_work{
+    width: 50%;
     text-align: center;
-    margin-top: 7rem;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    color:whitesmoke;
+    margin: auto;
+    padding: 0 3rem;
 }
-.h2-media{
-    font-size: 4vmin;
+.h2_cnc{
+    font-size: 5vmin;
 }
-.p-media{
-    padding: 0 1rem;
-    margin: 2rem auto;
+.p_cnc{
     font-size: 2vmin;
 }
 
+/* LETS WORK TOGETHER */
+
+.letswork{
+    width: 100%;
+    margin-top: 6rem;
+    padding-left: 2rem;    
+}
+.letswork h2{
+    font-size: 4vmin;
+}
+.letswork h3{
+    font-size: 8vmin;
+}
+.line3{
+    width: 50vmin;
+    height: 0.2rem;
+    margin: 1rem 0 2rem 0;
+    background-color: crimson;
+}
+
+/* FOOTER */
+
 footer{
     width: 100vw;
-    height: 200px;
+    height: 420px;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+form{
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem 0 2rem;
+    background: rgba(224, 33, 33, 0.322);
+    box-sizing: border-box;
+    border-radius: 0.8rem;  
+    text-align: center;  
+}
+.box-form{
+    width: 30%;      
+}
+form input, textarea{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;    
+}
+textarea{
+    max-width: 100%;
+    max-height: 5rem;
+}
+.button1{
+    width: 100%;
+    cursor: pointer;
+    color: azure;
+    background: crimson;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.7rem;
+}
+
+.mapa{
+    width: 30%;    
+    max-height: 300px;    
+}
+.mapaimg{
+    width: 100%;    
+    margin: 2rem auto 1rem auto;
+    padding: 0 2rem;
+}
+address{
+    color: ghostwhite;
+    padding: 0 2rem;
+}
+.linkmapa{
+    color:rgb(119, 119, 245);
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width:1280px){
+    .box-form, .mapa{
+        width: 50%;
+    }    
+}
+
+@media (max-width: 720px){
+    footer{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;  
+    }
+    .box-form, .mapa{
+        width: 100%;
+    }
 }
