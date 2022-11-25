@@ -24,6 +24,7 @@ a {
     color: azure;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.685);
+    transition: all 0.7s ease-in-out;
 }
 .logo{
     margin: 0 2rem;
@@ -317,6 +318,9 @@ address{
         text-align: center;
         background: rgba(0, 0, 0, 0.945);
         margin-left: -900px;
+        
+
+        
     }
     .logo{
         position: absolute;        
