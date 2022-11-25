@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Nelson Camargo Portafolio</title>
-    <script
-      src="https://kit.fontawesome.com/5b186684cb.js"
-      crossorigin="anonymous"
-    ></script>
+    
   </head>
 
   <body>
+
     <!--NAVEGATION-->
-    <nav class="navbar nav-about">
-      <a
-        href="https://www.youtube.com/channel/UCq_Af1jVv6xeFbE4qmKaoAw"
-        target="_blank"
-      >
-        <p class="logo">CCskatemedia</p>
+
+    <nav class="navbar">
+      <a href="https://www.youtube.com/channel/UCq_Af1jVv6xeFbE4qmKaoAw" class="logo" target="_blank">CCskatemedia
       </a>
       <ul class="nav-list">
         <li><a href="#">HOME</a></li>
         <li><a href="#adventure">Adventure</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a href="#button1" class="ctn">Contact</a></li>
-      </ul>
+      </ul>      
     </nav>
+    <img src="img/menu_button.png" alt="menubtn" class="menu_btn">
     <header>
       <div class="header-content">
         <h2>Explore My Wonderful World</h2>
@@ -157,5 +153,16 @@
           </div>     
       </div>
     </footer>
+
+
+
+    <script>
+      const menuBtn = document.querySelector('.menu_btn');
+      const navBar = document.querySelector('.navbar');
+
+      menuBtn.addEventListener('click', ()=>{
+        navBar.classList.toggle('mobile_menu')
+      })
+    </script>
   </body>
 </html>

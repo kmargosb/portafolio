@@ -9,10 +9,7 @@ a {
     color: azure;
 }
 
-.nav-list a:hover{
-    color: bisque;
-    background: rgba(255, 123, 0, 0.349)
-}
+
 
 /*NAVEGATION*/
 
@@ -25,6 +22,7 @@ a {
     justify-content: space-between;
     padding: 1rem;
     color: azure;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.685);
 }
 .logo{
@@ -46,6 +44,10 @@ ul {
 .nav-list {
     display: flex;
 }
+.nav-list a:hover{
+    color: bisque;
+    background: rgba(255, 123, 0, 0.349)
+}
 
 li {
     margin: 0 2rem;
@@ -66,6 +68,20 @@ li a{
     background: crimson;
     border-radius: 0.7rem;
     padding: 0.6rem 1.7rem;      
+}
+.menu_btn{
+    width: 4rem;
+    height: auto;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 11;
+    display: none;
+    opacity: 0.3;
+}
+.menu_btn:hover{
+    opacity: 1;
 }
 
 /*HEADER*/
@@ -228,8 +244,7 @@ footer{
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 
 form{
@@ -261,6 +276,7 @@ textarea{
     cursor: pointer;
     color: azure;
     background: crimson;
+    border: none;
     border-radius: 0.4rem;
     padding: 0.6rem 1.7rem;
 }
@@ -289,6 +305,37 @@ address{
     .box-form, .mapa{
         width: 50%;
     }    
+}
+
+@media (max-width: 870px){
+    .navbar{
+        padding: 0;
+        position: fixed;
+        justify-content: flex-start;
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.945);
+        margin-left: -900px;
+    }
+    .logo{
+        position: absolute;        
+        top: 2rem;
+        left: 1.4rem;
+    }
+    .nav-list{
+        flex-direction: column;
+        margin: auto;
+    }
+    .nav-list li{
+        padding: 3rem 0;
+    }
+    .menu_btn{
+        display: block;
+    }
+    .mobile_menu{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 720px){
