@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
@@ -120,8 +123,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.about{
-    position: relative;
+.about{    
     font-size: 2rem;
     background: crimson;
     color: black;
@@ -139,21 +141,49 @@ header {
 main{
     width: 100vw;    
 }
-
-.adventure{
-    width: 100%;
-    margin: 4rem 0;
-    padding-top: 5rem;   
-}
-.h2_adventure{
+.h2_learning{
     text-align: center;
     font-size: 4vmin;
+    margin-top: 5rem;
 }
 .line2{
     width: 50vmin;
     height: 0.3rem;
     margin: 0.2rem auto 1rem auto;
     background-color: crimson;
+}
+
+/* CNC */
+
+.cnc_router{
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.cnc_media{
+    width: 50%; 
+    object-fit: cover;   
+}
+.cnc_work{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 0 3rem;
+}
+.h2_cnc{
+    font-size: 5vmin;    
+}
+.p_cnc{
+    font-size: 2vmin;
+    margin: 2rem auto;
+}
+
+/* ADVENTURE */
+
+.adventure{
+    width: 100%;
+    margin: 8rem 0 2rem;    
 }
 .h3_adventure{
     text-align: center;
@@ -165,7 +195,7 @@ main{
     width: 100vw;
     max-width: 1080px;
     height: 100vh;
-    margin: 6rem auto;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 15rem;
@@ -191,31 +221,7 @@ figure img:hover{
     grid-row-start: span 2;
 }
 
-/* CNC */
 
-.cnc_router{
-    width: 90%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-around;
-}
-.cnc_media{
-    width: 50%; 
-    object-fit: cover;   
-}
-.cnc_work{
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding: 0 3rem;
-}
-.h2_cnc{
-    font-size: 5vmin;    
-}
-.p_cnc{
-    font-size: 2vmin;
-    margin: 2rem auto;
-}
 
 /* LETS WORK TOGETHER */
 
@@ -241,7 +247,7 @@ figure img:hover{
 
 footer{
     width: 100vw;
-    height: 420px;
+    height: auto;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
@@ -317,10 +323,7 @@ address{
         width: 50%;
         text-align: center;
         background: rgba(0, 0, 0, 0.945);
-        margin-left: -900px;
-        
-
-        
+        margin-left: -900px;        
     }
     .logo{
         position: absolute;        
@@ -345,8 +348,8 @@ address{
 @media (max-width: 720px){
     footer{
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 78vh;
         text-align: center;  
     }
     .box-form, .mapa{
@@ -354,6 +357,12 @@ address{
     }
     .h3_adventure{
         margin: 0 1rem;
+    }
+    .cnc_router{
+        margin: 2rem auto 0 auto;
+    }
+    .cnc_work{
+        padding: 1rem;
     }
     .cnc_work a{
         font-size: 1rem;
