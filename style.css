@@ -183,14 +183,14 @@ main{
 
 .adventure{
     width: 100%;
-    margin: 8rem 0 2rem;    
+    margin: 0 0 2rem;
+    padding: 5rem 0 0 0;
 }
 .h3_adventure{
     text-align: center;
     font-size: 8vmin;
     margin: 0 2vmin;
 }
-
 .galeria{
     width: 100vw;
     max-width: 1080px;
