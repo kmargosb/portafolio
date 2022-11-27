@@ -41,7 +41,7 @@ a {
     transform: scale(1.4);
     color:gold;
 }
-ul {
+.nav-list {
     list-style: none;
 }
 
@@ -52,13 +52,11 @@ ul {
     color: bisque;
     background: rgba(255, 123, 0, 0.349)
 }
-
-li {
+.nav-list > li {
     margin: 0 2rem;
     padding: 0.7rem 0;
 }
-li a{
-    /* display: block; */
+.nav-list > li a{    
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
 }
@@ -170,6 +168,11 @@ main{
     text-align: center;
     margin: auto;
     padding: 0 3rem;
+}
+.cnc_work > article {
+    text-align: left;
+    margin: 0 2rem 2rem;
+    font-size: 2vmin;
 }
 .h2_cnc{
     font-size: 5vmin;    
@@ -368,4 +371,11 @@ address{
         font-size: 1rem;
         padding: 0.2rem 0.5rem;
     }
+}
+
+@media (max-width: 480px){
+    .cnc_work > article {
+        margin: 0 0.5rem 2rem;
+    }
+    
 }

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 3rem auto;      
+}
+img{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 0.5rem;
+}
+.column{
+    padding: 0.5rem;
+    flex: 100%;
+}
+.column img, video{
+    margin-top: 1rem;
+}
+
