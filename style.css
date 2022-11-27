@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -34,8 +35,7 @@ a {
     padding: 0.7rem 0;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: 0.5s;
-    
+    transition: 0.5s;    
 }
 .logo:hover{
     transform: scale(1.4);
@@ -44,7 +44,6 @@ a {
 .nav-list {
     list-style: none;
 }
-
 .nav-list {
     display: flex;
 }
@@ -64,7 +63,6 @@ a {
     color: bisque;
     background: rgba(255, 123, 0, 0.349);    
 }
-
 .ctn {       
     color: azure;
     background: crimson;
@@ -98,29 +96,24 @@ header {
     align-items: flex-end;
     justify-content: center;
 }
-
 .header-content {
-    color: azure;
+    color: rgb(255, 255, 255);
     margin-bottom: 5rem;
     text-align: center;
 }
-
 .header-content h2 {
     font-size: 4vmin;
 }
-
 .header-content .line {
     width: 30vmin;
     height: 0.2rem;
     margin: 0.8rem auto;
     background-color: crimson;
 }
-
 .header-content h1 {
     font-size: 6vmin;
     margin-bottom: 2rem;
 }
-
 .about{    
     font-size: 2rem;
     background: crimson;
@@ -128,8 +121,7 @@ header {
     padding: 0.2rem 2rem;
     border-radius: 0.5rem;
     transition: 0.5s;
-}
-.about:hover{
+}.about:hover{
     letter-spacing: 0.25rem;
     color: white;
 }
@@ -141,11 +133,11 @@ main{
 }
 .h2_learning{
     text-align: center;
-    font-size: 4vmin;
+    font-size: 6vmin;
     margin-top: 5rem;
 }
 .line2{
-    width: 50vmin;
+    width: 80vmin;
     height: 0.3rem;
     margin: 0.2rem auto 1rem auto;
     background-color: crimson;
@@ -177,6 +169,9 @@ main{
 .h2_cnc{
     font-size: 5vmin;    
 }
+.h2_cnc strong{
+    background: linear-gradient(white 65%, crimson 35%);
+}
 .p_cnc{
     font-size: 2vmin;
     margin: 2rem auto;
@@ -191,8 +186,11 @@ main{
 }
 .h3_adventure{
     text-align: center;
-    font-size: 8vmin;
+    font-size: 6vmin;
     margin: 0 2vmin;
+}
+.h3_adventure span{
+    background: linear-gradient(white 60%, rgb(220, 20, 60) 40%);
 }
 .galeria{
     width: 100vw;
@@ -257,6 +255,23 @@ footer{
     justify-content: space-evenly;    
 }
 
+.mapa{
+    width: 30%;    
+    max-height: 300px;    
+}
+.mapaimg{
+    width: 100%;    
+    margin: 2rem auto 1rem auto;
+    padding: 0 2rem;
+}
+address{
+    color: ghostwhite;
+    padding: 0 2rem;
+}
+.linkmapa{
+    color:rgb(119, 119, 245);
+}
+
 form{
     width: 80%;
     margin: 2rem auto;
@@ -289,23 +304,6 @@ textarea{
     border: none;
     border-radius: 0.4rem;
     padding: 0.6rem 1.7rem;
-}
-
-.mapa{
-    width: 30%;    
-    max-height: 300px;    
-}
-.mapaimg{
-    width: 100%;    
-    margin: 2rem auto 1rem auto;
-    padding: 0 2rem;
-}
-address{
-    color: ghostwhite;
-    padding: 0 2rem;
-}
-.linkmapa{
-    color:rgb(119, 119, 245);
 }
 
 
